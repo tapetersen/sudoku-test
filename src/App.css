@@ -31,3 +31,14 @@
     transform: rotate(360deg);
   }
 }
+
+.sudoku-grid {
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+  grid-gap: 5px;
+}
+
+.sudoku-grid input {
+  width: 1rem;
+  text-align: center;
+}
