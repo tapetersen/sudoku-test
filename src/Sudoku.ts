@@ -39,11 +39,11 @@ export function checkValid(board: number[]) {
             for (let k=0; k<3; k++) {
                 for (let l=0; l<3; l++) {
                     subSquareSet.add(board[
-                    i*3*9 + // Outer row
-                    j*3 +   // Outer column
-                    k*9 +   // Inner row
-                    l       // Inner column
-                        ])
+                        i*3*9 + // Outer row
+                        j*3 +   // Outer column
+                        k*9 +   // Inner row
+                        l       // Inner column
+                    ])
                 }
             }
 

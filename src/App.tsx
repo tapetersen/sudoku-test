@@ -25,7 +25,7 @@ class SudokuBoard extends Component<Readonly<{}>, State> {
     constructor(props: Readonly<{}>) {
         super(props);
         this.state = {
-            cells: new Array(81).fill(0),
+            cells: new Array(9*9).fill(0),
         }
     }
 
@@ -39,7 +39,6 @@ class SudokuBoard extends Component<Readonly<{}>, State> {
 
     render() {
         const valid = checkValid(this.state.cells) === Results.VALID;
-        console.log(Results[checkValid(this.state.cells)]);
         return (
             <div>
                 <div className="sudoku-grid">
